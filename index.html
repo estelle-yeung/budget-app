@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Zero-Based Budget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Budget App</h1>
+        
+        <div class="summary-card">
+            <h2>Ready to Assign</h2>
+            <div class="balance-large">$<span id="ready-to-assign">0.00</span></div>
+            <div class="input-group">
+                <input type="number" id="income-amount" placeholder="Add Income $">
+                <button onclick="addInflow()">Add</button>
+            </div>
+        </div>
+
+        <div class="category-manager">
+            <input type="text" id="new-cat-name" placeholder="Category Name (e.g. Rent)">
+            <button onclick="addNewCategory()" class="btn-add">+ Add Category</button>
+        </div>
+
+        <div id="categories-list" class="grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

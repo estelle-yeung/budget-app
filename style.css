@@ -1,0 +1,36 @@
+:root {
+    --primary: #2c3e50;
+    --success: #27ae60;
+    --danger: #e74c3c;
+    --light: #ecf0f1;
+}
+
+body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; color: var(--primary); display: flex; justify-content: center; }
+.container { width: 90%; max-width: 800px; padding: 20px; }
+
+.summary-card { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 30px; }
+.balance-large { font-size: 3rem; font-weight: bold; color: var(--success); margin: 10px 0; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+.card { background: white; padding: 20px; border-radius: 8px; border-left: 5px solid var(--success); box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+
+.card-actions { display: flex; margin-top: 10px; gap: 5px; }
+input { padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 60%; }
+button { padding: 8px 12px; border: none; border-radius: 4px; background: var(--primary); color: white; cursor: pointer; }
+.btn-spend { background: var(--danger); }
+.btn-add { background: var(--success); padding: 10px 20px; }
+
+.btn-delete {
+    background: transparent;
+    color: #ccc;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.btn-delete:hover {
+    color: var(--danger);
+    background: transparent;
+}
